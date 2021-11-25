@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		983C6DF9274CC2F400FCE8A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C6DF8274CC2F400FCE8A3 /* AppDelegate.m */; };
+		983C6DFC274CC2F400FCE8A3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C6DFB274CC2F400FCE8A3 /* SceneDelegate.m */; };
+		983C6DFF274CC2F400FCE8A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C6DFE274CC2F400FCE8A3 /* ViewController.m */; };
+		983C6E02274CC2F400FCE8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983C6E00274CC2F400FCE8A3 /* Main.storyboard */; };
+		983C6E04274CC2F700FCE8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983C6E03274CC2F700FCE8A3 /* Assets.xcassets */; };
+		983C6E07274CC2F700FCE8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983C6E05274CC2F700FCE8A3 /* LaunchScreen.storyboard */; };
+		983C6E0A274CC2F700FCE8A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C6E09274CC2F700FCE8A3 /* main.m */; };
+		983C6E13274CC35800FCE8A3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983C6E12274CC35800FCE8A3 /* HealthKit.framework */; };
+		984B9E8F274CD6E600E77A37 /* 健康Demo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 984B9E8E274CD6E600E77A37 /* 健康Demo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		984B9E95274CD6E600E77A37 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984B9E93274CD6E600E77A37 /* Interface.storyboard */; };
+		984B9E97274CD6EC00E77A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984B9E96274CD6EC00E77A37 /* Assets.xcassets */; };
+		984B9E9D274CD6EC00E77A37 /* watchstep WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 984B9E9C274CD6EC00E77A37 /* watchstep WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		984B9EA3274CD6EC00E77A37 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984B9EA2274CD6EC00E77A37 /* InterfaceController.m */; };
+		984B9EA6274CD6EC00E77A37 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 984B9EA5274CD6EC00E77A37 /* ExtensionDelegate.m */; };
+		984B9EA9274CD6EC00E77A37 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984B9EA8274CD6EC00E77A37 /* NotificationController.m */; };
+		984B9EAC274CD6EC00E77A37 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984B9EAB274CD6EC00E77A37 /* ComplicationController.m */; };
+		984B9EAE274CD6EF00E77A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984B9EAD274CD6EF00E77A37 /* Assets.xcassets */; };
+		984B9EBE274CD9AF00E77A37 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984B9EBD274CD9AF00E77A37 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		984B9E90274CD6E600E77A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983C6DEC274CC2F400FCE8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984B9E8D274CD6E600E77A37;
+			remoteInfo = "watchstep WatchKit App";
+		};
+		984B9E9E274CD6EC00E77A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983C6DEC274CC2F400FCE8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984B9E9B274CD6EC00E77A37;
+			remoteInfo = "watchstep WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		984B9EB4274CD6EF00E77A37 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				984B9E9D274CD6EC00E77A37 /* watchstep WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9EB8274CD6EF00E77A37 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				984B9E8F274CD6E600E77A37 /* 健康Demo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		983C6DF4274CC2F400FCE8A3 /* oc-developer-health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oc-developer-health.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		983C6DF7274CC2F400FCE8A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		983C6DF8274CC2F400FCE8A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		983C6DFA274CC2F400FCE8A3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		983C6DFB274CC2F400FCE8A3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		983C6DFD274CC2F400FCE8A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		983C6DFE274CC2F400FCE8A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		983C6E01274CC2F400FCE8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		983C6E03274CC2F700FCE8A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		983C6E06274CC2F700FCE8A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		983C6E08274CC2F700FCE8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983C6E09274CC2F700FCE8A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		983C6E10274CC35800FCE8A3 /* oc-developer-health.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "oc-developer-health.entitlements"; sourceTree = "<group>"; };
+		983C6E12274CC35800FCE8A3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		984B9E8B274CD6E500E77A37 /* watchstep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchstep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984B9E8E274CD6E600E77A37 /* 健康Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "健康Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984B9E94274CD6E600E77A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		984B9E96274CD6EC00E77A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984B9E9C274CD6EC00E77A37 /* watchstep WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchstep WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984B9EA1274CD6EC00E77A37 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		984B9EA2274CD6EC00E77A37 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		984B9EA4274CD6EC00E77A37 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		984B9EA5274CD6EC00E77A37 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		984B9EA7274CD6EC00E77A37 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		984B9EA8274CD6EC00E77A37 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		984B9EAA274CD6EC00E77A37 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		984B9EAB274CD6EC00E77A37 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		984B9EAD274CD6EF00E77A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984B9EAF274CD6EF00E77A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984B9EB0274CD6EF00E77A37 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		984B9EBC274CD9AF00E77A37 /* watchstep WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "watchstep WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		984B9EBD274CD9AF00E77A37 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		983C6DF1274CC2F400FCE8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983C6E13274CC35800FCE8A3 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9E99274CD6EC00E77A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984B9EBE274CD9AF00E77A37 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		983C6DEB274CC2F400FCE8A3 = {
+			isa = PBXGroup;
+			children = (
+				983C6DF6274CC2F400FCE8A3 /* oc-developer-health */,
+				984B9E92274CD6E600E77A37 /* watchstep WatchKit App */,
+				984B9EA0274CD6EC00E77A37 /* watchstep WatchKit Extension */,
+				983C6DF5274CC2F400FCE8A3 /* Products */,
+				983C6E11274CC35800FCE8A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		983C6DF5274CC2F400FCE8A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983C6DF4274CC2F400FCE8A3 /* oc-developer-health.app */,
+				984B9E8B274CD6E500E77A37 /* watchstep.app */,
+				984B9E8E274CD6E600E77A37 /* 健康Demo.app */,
+				984B9E9C274CD6EC00E77A37 /* watchstep WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983C6DF6274CC2F400FCE8A3 /* oc-developer-health */ = {
+			isa = PBXGroup;
+			children = (
+				983C6E10274CC35800FCE8A3 /* oc-developer-health.entitlements */,
+				983C6DF7274CC2F400FCE8A3 /* AppDelegate.h */,
+				983C6DF8274CC2F400FCE8A3 /* AppDelegate.m */,
+				983C6DFA274CC2F400FCE8A3 /* SceneDelegate.h */,
+				983C6DFB274CC2F400FCE8A3 /* SceneDelegate.m */,
+				983C6DFD274CC2F400FCE8A3 /* ViewController.h */,
+				983C6DFE274CC2F400FCE8A3 /* ViewController.m */,
+				983C6E00274CC2F400FCE8A3 /* Main.storyboard */,
+				983C6E03274CC2F700FCE8A3 /* Assets.xcassets */,
+				983C6E05274CC2F700FCE8A3 /* LaunchScreen.storyboard */,
+				983C6E08274CC2F700FCE8A3 /* Info.plist */,
+				983C6E09274CC2F700FCE8A3 /* main.m */,
+			);
+			path = "oc-developer-health";
+			sourceTree = "<group>";
+		};
+		983C6E11274CC35800FCE8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				984B9EBD274CD9AF00E77A37 /* HealthKit.framework */,
+				983C6E12274CC35800FCE8A3 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		984B9E92274CD6E600E77A37 /* watchstep WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				984B9E93274CD6E600E77A37 /* Interface.storyboard */,
+				984B9E96274CD6EC00E77A37 /* Assets.xcassets */,
+			);
+			path = "watchstep WatchKit App";
+			sourceTree = "<group>";
+		};
+		984B9EA0274CD6EC00E77A37 /* watchstep WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				984B9EBC274CD9AF00E77A37 /* watchstep WatchKit Extension.entitlements */,
+				984B9EA1274CD6EC00E77A37 /* InterfaceController.h */,
+				984B9EA2274CD6EC00E77A37 /* InterfaceController.m */,
+				984B9EA4274CD6EC00E77A37 /* ExtensionDelegate.h */,
+				984B9EA5274CD6EC00E77A37 /* ExtensionDelegate.m */,
+				984B9EA7274CD6EC00E77A37 /* NotificationController.h */,
+				984B9EA8274CD6EC00E77A37 /* NotificationController.m */,
+				984B9EAA274CD6EC00E77A37 /* ComplicationController.h */,
+				984B9EAB274CD6EC00E77A37 /* ComplicationController.m */,
+				984B9EAD274CD6EF00E77A37 /* Assets.xcassets */,
+				984B9EAF274CD6EF00E77A37 /* Info.plist */,
+				984B9EB0274CD6EF00E77A37 /* PushNotificationPayload.apns */,
+			);
+			path = "watchstep WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		983C6DF3274CC2F400FCE8A3 /* oc-developer-health */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983C6E0D274CC2F700FCE8A3 /* Build configuration list for PBXNativeTarget "oc-developer-health" */;
+			buildPhases = (
+				983C6DF0274CC2F400FCE8A3 /* Sources */,
+				983C6DF1274CC2F400FCE8A3 /* Frameworks */,
+				983C6DF2274CC2F400FCE8A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "oc-developer-health";
+			productName = "oc-developer-health";
+			productReference = 983C6DF4274CC2F400FCE8A3 /* oc-developer-health.app */;
+			productType = "com.apple.product-type.application";
+		};
+		984B9E8A274CD6E500E77A37 /* watchstep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984B9EB9274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep" */;
+			buildPhases = (
+				984B9E89274CD6E500E77A37 /* Resources */,
+				984B9EB8274CD6EF00E77A37 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984B9E91274CD6E600E77A37 /* PBXTargetDependency */,
+			);
+			name = watchstep;
+			productName = watchstep;
+			productReference = 984B9E8B274CD6E500E77A37 /* watchstep.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		984B9E8D274CD6E600E77A37 /* watchstep WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984B9EB5274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep WatchKit App" */;
+			buildPhases = (
+				984B9E8C274CD6E600E77A37 /* Resources */,
+				984B9EB4274CD6EF00E77A37 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984B9E9F274CD6EC00E77A37 /* PBXTargetDependency */,
+			);
+			name = "watchstep WatchKit App";
+			productName = "watchstep WatchKit App";
+			productReference = 984B9E8E274CD6E600E77A37 /* 健康Demo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		984B9E9B274CD6EC00E77A37 /* watchstep WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984B9EB1274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep WatchKit Extension" */;
+			buildPhases = (
+				984B9E98274CD6EC00E77A37 /* Sources */,
+				984B9E99274CD6EC00E77A37 /* Frameworks */,
+				984B9E9A274CD6EC00E77A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchstep WatchKit Extension";
+			productName = "watchstep WatchKit Extension";
+			productReference = 984B9E9C274CD6EC00E77A37 /* watchstep WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		983C6DEC274CC2F400FCE8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					983C6DF3274CC2F400FCE8A3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					984B9E8A274CD6E500E77A37 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					984B9E8D274CD6E600E77A37 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					984B9E9B274CD6EC00E77A37 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 983C6DEF274CC2F400FCE8A3 /* Build configuration list for PBXProject "oc-developer-health" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 983C6DEB274CC2F400FCE8A3;
+			productRefGroup = 983C6DF5274CC2F400FCE8A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				983C6DF3274CC2F400FCE8A3 /* oc-developer-health */,
+				984B9E8A274CD6E500E77A37 /* watchstep */,
+				984B9E8D274CD6E600E77A37 /* watchstep WatchKit App */,
+				984B9E9B274CD6EC00E77A37 /* watchstep WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		983C6DF2274CC2F400FCE8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983C6E07274CC2F700FCE8A3 /* LaunchScreen.storyboard in Resources */,
+				983C6E04274CC2F700FCE8A3 /* Assets.xcassets in Resources */,
+				983C6E02274CC2F400FCE8A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9E89274CD6E500E77A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9E8C274CD6E600E77A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984B9E97274CD6EC00E77A37 /* Assets.xcassets in Resources */,
+				984B9E95274CD6E600E77A37 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9E9A274CD6EC00E77A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984B9EAE274CD6EF00E77A37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		983C6DF0274CC2F400FCE8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983C6DFF274CC2F400FCE8A3 /* ViewController.m in Sources */,
+				983C6DF9274CC2F400FCE8A3 /* AppDelegate.m in Sources */,
+				983C6E0A274CC2F700FCE8A3 /* main.m in Sources */,
+				983C6DFC274CC2F400FCE8A3 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984B9E98274CD6EC00E77A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984B9EA6274CD6EC00E77A37 /* ExtensionDelegate.m in Sources */,
+				984B9EAC274CD6EC00E77A37 /* ComplicationController.m in Sources */,
+				984B9EA3274CD6EC00E77A37 /* InterfaceController.m in Sources */,
+				984B9EA9274CD6EC00E77A37 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		984B9E91274CD6E600E77A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984B9E8D274CD6E600E77A37 /* watchstep WatchKit App */;
+			targetProxy = 984B9E90274CD6E600E77A37 /* PBXContainerItemProxy */;
+		};
+		984B9E9F274CD6EC00E77A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984B9E9B274CD6EC00E77A37 /* watchstep WatchKit Extension */;
+			targetProxy = 984B9E9E274CD6EC00E77A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		983C6E00274CC2F400FCE8A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983C6E01274CC2F400FCE8A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		983C6E05274CC2F700FCE8A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				983C6E06274CC2F700FCE8A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		984B9E93274CD6E600E77A37 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984B9E94274CD6E600E77A37 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		983C6E0B274CC2F700FCE8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		983C6E0C274CC2F700FCE8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		983C6E0E274CC2F700FCE8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "oc-developer-health/oc-developer-health.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "oc-developer-health/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gongniu.oc-developer-health";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		983C6E0F274CC2F700FCE8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "oc-developer-health/oc-developer-health.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "oc-developer-health/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gongniu.oc-developer-health";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		984B9EB2274CD6EF00E77A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watchstep WatchKit Extension/watchstep WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchstep WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchstep WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		984B9EB3274CD6EF00E77A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watchstep WatchKit Extension/watchstep WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchstep WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchstep WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = ExtensionDelegate;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		984B9EB6274CD6EF00E77A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchstep_WatchKit_Extension;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep.watchkitapp;
+				PRODUCT_NAME = "健康Demo";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		984B9EB7274CD6EF00E77A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchstep_WatchKit_Extension;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "App需要您的同意,才能访问健康分享";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep.watchkitapp;
+				PRODUCT_NAME = "健康Demo";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		984B9EBA274CD6EF00E77A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		984B9EBB274CD6EF00E77A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WW369W9G65;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gongniu.watchstep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		983C6DEF274CC2F400FCE8A3 /* Build configuration list for PBXProject "oc-developer-health" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983C6E0B274CC2F700FCE8A3 /* Debug */,
+				983C6E0C274CC2F700FCE8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983C6E0D274CC2F700FCE8A3 /* Build configuration list for PBXNativeTarget "oc-developer-health" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983C6E0E274CC2F700FCE8A3 /* Debug */,
+				983C6E0F274CC2F700FCE8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984B9EB1274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984B9EB2274CD6EF00E77A37 /* Debug */,
+				984B9EB3274CD6EF00E77A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984B9EB5274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984B9EB6274CD6EF00E77A37 /* Debug */,
+				984B9EB7274CD6EF00E77A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984B9EB9274CD6EF00E77A37 /* Build configuration list for PBXNativeTarget "watchstep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984B9EBA274CD6EF00E77A37 /* Debug */,
+				984B9EBB274CD6EF00E77A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 983C6DEC274CC2F400FCE8A3 /* Project object */;
+}
